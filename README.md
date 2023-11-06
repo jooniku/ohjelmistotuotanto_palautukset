@@ -1,2 +1,3 @@
 # palautusrepositorio
-Part of Ohjelmistotuotanto
+
+Ohtuvarasto löytyy ![täältä](https://github.com/jooniku/ohtuvarasto).

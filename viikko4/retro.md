@@ -2,4 +2,4 @@ Sprintin jälkeinen retrospektiivitilaisuus on tarkoitettu kehittämään tiimin
 
 Start, Stop, Continue, More of, Less of Wheel toimii siten, että piirretään ympyrä, missä on 5 omaa aluetta ja tiimi voi jokaiselle alueelle kirjoittaa ajatuksia sprintistä. Näistä kommenteista sitten voidaan keskustella syvemmin tiimin kesken.
 
-Glad, Sad, Mad tekniikka on hyvin samankaltainen. Siinä tiimin työskentelystä esitetään kommentteja jotka sitten luokitellaan "Glad", "Sad" tai "Mad". Tämän jälkeen tiimin kesken valitaan mihin kommentteihin syvennytään.  
+Glad, Sad, Mad tekniikka on hyvin samankaltainen. Siinä tiimin työskentelystä esitetään kommentteja jotka sitten luokitellaan "Glad", "Sad" tai "Mad". Tämän jälkeen tiimin kesken valitaan mihin kommentteihin syvennytään.

@@ -1,9 +1,13 @@
 from tuomari import Tuomari
 from tekoaly import Tekoaly
+from kps_peli import KPSPeli
 
 
-class KPSTekoaly:
-    def pelaa(self):
+class KPSTekoaly(KPSPeli):
+    def __init__(self) -> None:
+        self._pelaaja = Tekoaly()
+
+    def pelaa1(self):
         tuomari = Tuomari()
         tekoaly = Tekoaly()
 
@@ -23,6 +27,10 @@ class KPSTekoaly:
 
         print("Kiitos!")
         print(tuomari)
+    
+    def anna_siirto(self):
+        return "k"
 
-    def _onko_ok_siirto(self, siirto):
-        return siirto == "k" or siirto == "p" or siirto == "s"
+    def __str__(self) -> str:
+        return "Tietokone"
+

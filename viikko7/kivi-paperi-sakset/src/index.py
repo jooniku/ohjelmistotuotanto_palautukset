@@ -1,14 +1,7 @@
-from kps_pelaaja_vs_pelaaja import KPSPelaajaVsPelaaja
-from kps_tekoaly import KPSTekoaly
-from kps_parempi_tekoaly import KPSParempiTekoaly
-
+from pelitehdas import PeliTehdas, InvalidGame
 
 def main():
     while True:
-        
-        pelivalinnat = {"a": KPSPelaajaVsPelaaja(), 
-                        "b": KPSTekoaly(), 
-                        "c": KPSParempiTekoaly()}
 
         print("Valitse pelataanko"
               "\n (a) Ihmistä vastaan"
@@ -19,12 +12,16 @@ def main():
 
         vastaus = input()
 
-        peli = pelivalinnat[vastaus]
+
         print(
             "Peli loppuu kun pelaaja antaa virheellisen siirron eli jonkun muun kuin k, p tai s"
             )
+        try:
+            peli = PeliTehdas.luo_peli(pelityyli=vastaus)
+            peli.pelaa()
+        except InvalidGame as e:
+            print(e)
         
-        peli.pelaa()
 
 
 if __name__ == "__main__":

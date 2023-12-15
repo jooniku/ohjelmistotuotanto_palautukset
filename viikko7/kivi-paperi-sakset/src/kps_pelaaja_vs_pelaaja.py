@@ -1,8 +1,11 @@
 from tuomari import Tuomari
+from kps_peli import KPSPeli
 
-
-class KPSPelaajaVsPelaaja:
-    def pelaa(self):
+class KPSPelaajaVsPelaaja(KPSPeli):
+    def __init__(self) -> None:
+        self._pelaaja = None
+        
+    def pelaa1(self):
         tuomari = Tuomari()
 
         ekan_siirto = input("Ensimmäisen pelaajan siirto: ")
@@ -18,5 +21,8 @@ class KPSPelaajaVsPelaaja:
         print("Kiitos!")
         print(tuomari)
 
-    def _onko_ok_siirto(self, siirto):
-        return siirto == "k" or siirto == "p" or siirto == "s"
+    def anna_siirto(self):
+        return input("Toisen pelaajan siirto: ")
+
+    def __str__(self) -> str:
+        return "Toinen pelaaja"

@@ -20,7 +20,8 @@ def main():
             peli = PeliTehdas.luo_peli(pelityyli=vastaus)
             peli.pelaa()
         except InvalidGame as e:
-            print(e)
+            print("Hei hei!")
+            break
         
 
 

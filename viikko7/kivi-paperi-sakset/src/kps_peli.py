@@ -7,7 +7,7 @@ class KPSPeli:
         self._vastustaja = vastustaja
 
     def pelaa(self):
-        ekan_siirto = input("Ensimmäisen pelaajan siirto: ")
+        ekan_siirto = self.ekan_pel_siirto()
         tokan_siirto = self._vastustaja.anna_siirto()
 
         print(f"{self._vastustaja} valitsi: {tokan_siirto}")
@@ -19,17 +19,17 @@ class KPSPeli:
             ekan_siirto = input("Ensimmäisen pelaajan siirto: ")
             tokan_siirto = self._vastustaja.anna_siirto()
 
-            #print(f"{self._vastustaja} valitsi: {tokan_siirto}")
+            print(f"{self._vastustaja} valitsi: {tokan_siirto}")
             self._vastustaja.aseta_siirto(ekan_siirto)
 
         print("Kiitos!")
         print(self._tuomari)
+    
+    def ekan_pel_siirto(self):
+        return input("Ensimmäisen pelaajan siirto: ")
 
     def anna_siirto(self):
-        return
-    
-    def kirjaa_siirto(self):
-        return
+        return "k"
     
     def aseta_siirto(self, ekan_siirto):
         return
@@ -37,3 +37,5 @@ class KPSPeli:
     def _onko_ok_siirto(self, siirto):
         return siirto == "k" or siirto == "p" or siirto == "s"
     
+    def __str__(self) -> str:
+        return "Tietokone"
